@@ -1,1 +1,171 @@
 
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Styling lists</title>
+    <style>
+      /* General styles */
+      body { background-image: url('DarkBG.png');
+             background-size: cover;
+             margin: 2rem;
+             background-attachment: fixed; }
+      a {
+        color:red;
+      }
+      html {
+        font-family: 'Courier New', monospace;
+        font-size: 1rem;
+        color: aqua;
+      }
+
+      h2 {
+        font-size: 2rem
+      }
+
+      ul,ol,dl,p {
+        font-size: 1.5rem;
+      }
+
+      li, p {
+        line-height: 1.5;
+      }
+
+      /* Unordered list styles */
+
+      ul {
+        padding-left: 2rem;
+        list-style-type: none;
+      }
+
+      ul li {
+        padding-left: 2rem;
+        background-image: url(star.svg);
+        background-position: 0 0;
+        background-size: 1.6rem 1.6rem;
+        background-repeat: no-repeat;
+      }
+
+      /* Ordered list styles */
+
+      ol {
+        list-style-type: upper-roman;
+      }
+      /* Description list styles */
+
+      dd, dt {
+        line-height: 1.5;
+      }
+
+      dt {
+        font-weight: bold;
+      }
+    
+    table {
+      border-collapse: collapse;
+      margin: 2rem auto;               /* Center the table */
+      background: rgba(134, 130, 130, 0.5);
+      width: fit-content;              /* Shrink table to fit its contents */
+      max-width: 90%;                  /* Prevent overflow on smaller screens */
+      table-layout: auto;              /* Columns size automatically */
+      border-radius: 10px;             /* Optional: smooth corners */
+    }
+
+    th, td {
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      color: aqua;
+      white-space: nowrap;
+    }
+
+    th {
+      background: rgba(53, 49, 49, 0.05);
+      font-weight: bold;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Dog breeds</h1>
+    <h2>Popular choices of dogs</h2>
+
+    <p>Information is taken from <a href="https://www.petmd.com/dog/general-health/most-popular-dog-breeds">here</a>.</p>
+
+    <ol>
+      <li>French Bulldog</li>
+      <image src="https://image.petmd.com/files/inline-images/french-bulldog-beach.jpg?VersionId=gfgGJ.bIJp6MNfKQlhOn6jRiobWi8hpC" alt="French Bulldog" style="max-width:20%;height:auto;">
+      <li>Labrador Retriever</li>
+      <image src="https://image.petmd.com/files/inline-images/labrador-retriever-chocolate.jpg?VersionId=n.JXd_7wryz._vn9FAJsTlaQNybrGDrZ   " alt="Labrador Retriever" style="max-width:20%;height:auto;">
+      <li>Golden Retriever</li>
+      <image src="https://image.petmd.com/files/inline-images/popular-breed-golden-retriever.jpg?VersionId=YDiWIQMMASgn8KoOGiV.CBOCnc7bZut3" alt="Golden Retriever" style="max-width: 20%;height:auto;"></image>
+      <li>German Shepherd</li>
+      <image src="https://image.petmd.com/files/inline-images/popular-breed-german-shepherd.jpg?VersionId=a.va9AZ_npeNXdyPlh50oEEfhNRJCysX" alt="German Shepherd" style="max-width:20%;height:auto;"></image>
+      <li>Poodle</li>
+      <image src="https://image.petmd.com/files/inline-images/popular-breed-poodle.jpg?VersionId=6Z22PTlf5Jm5gieO7QPddpY8wRs_8IIq" alt="Poodle" style="max-width:20%;height:auto;"></image>
+    </ol>
+
+    <h2>Info about the top 5 popular dogs</h2>
+
+    <table>
+      <caption>Top 5 Dog Breeds — key facts</caption>
+      <thead>
+        <tr>
+          <th>Breed</th>
+          <th>Image</th>
+          <th>Size</th>
+          <th>Typical weight</th>
+          <th>Lifespan</th>
+          <th>Temperament</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>French Bulldog</td>
+          <td><img src="https://image.petmd.com/files/inline-images/french-bulldog-beach.jpg?VersionId=gfgGJ.bIJp6MNfKQlhOn6jRiobWi8hpC" alt="French Bulldog" style="max-width:100%;height:auto;"></td>
+          <td>Small</td>
+          <td>16–28 lbs</td>
+          <td>10–12 years</td>
+          <td>Affectionate, playful</td>
+        </tr>
+        <tr>
+          <td>Labrador Retriever</td>
+          <td><img src="https://image.petmd.com/files/inline-images/labrador-retriever-chocolate.jpg?VersionId=n.JXd_7wryz._vn9FAJsTlaQNybrGDrZ" alt="Labrador Retriever" style="max-width:100%;height:auto;"></td>
+          <td>Large</td>
+          <td>55–80 lbs</td>
+          <td>10–12 years</td>
+          <td>Friendly, outgoing</td>
+        </tr>
+        <tr>
+          <td>Golden Retriever</td>
+          <td><img src="https://image.petmd.com/files/inline-images/popular-breed-golden-retriever.jpg?VersionId=YDiWIQMMASgn8KoOGiV.CBOCnc7bZut3" alt="Golden Retriever" style="max-width:100%;height:auto;"></td>
+          <td>Large</td>
+          <td>55–75 lbs</td>
+          <td>10–12 years</td>
+          <td>Friendly, intelligent</td>
+        </tr>
+        <tr>
+          <td>German Shepherd</td>
+          <td><img src="https://image.petmd.com/files/inline-images/popular-breed-german-shepherd.jpg?VersionId=a.va9AZ_npeNXdyPlh50oEEfhNRJCysX" alt="German Shepherd" style="max-width:100%;height:auto;"></td>
+          <td>Large</td>
+          <td>50–90 lbs</td>
+          <td>9–13 years</td>
+          <td>Loyal, confident</td>
+        </tr>
+        <tr>
+          <td>Poodle (Standard)</td>
+          <td><img src="https://image.petmd.com/files/inline-images/popular-breed-poodle.jpg?VersionId=6Z22PTlf5Jm5gieO7QPddpY8wRs_8IIq" alt="Poodle" style="max-width:100%;height:auto;"></td>
+          <td>Medium/Large</td>
+          <td>40–70 lbs</td>
+          <td>10–18 years</td>
+          <td>Active, intelligent</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </body>
+</html>
